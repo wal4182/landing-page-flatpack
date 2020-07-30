@@ -1,0 +1,169 @@
+* {
+  scroll-behavior: smooth;
+}
+/* custom */
+.btn-custom {
+  background-color: #FC773E;
+  outline: none;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #F0713A;
+}
+.secTitle h3, h5 {
+  font-weight: bold;
+}
+.secTitle {
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* header */
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border: none;
+  }
+.navbar .navbar-brand span {
+  font-weight: bold;
+  margin-left: .5rem
+}
+.navbar a img.fb {
+  width: 9px;
+}
+.navbar a img {
+  width: 15px;
+}
+
+
+/* home */
+.home .jumbotron {
+  background-image: url(img/banner.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  margin-bottom: 0; 
+}
+.home .jumbotron::after {
+  content: '';
+  display: block;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, .5));
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.home .landing {
+  position: relative;
+}
+.home .landing-text {
+  position: absolute;
+  color: #fff;
+  top: 15vh;
+  z-index: 10;
+}
+.home .landing-text .display-4 {
+  font-size: 32px;
+}
+.home .content {
+  background-color: #E8E8E8;
+  padding: 30px 0; 
+}
+.home h4 {
+  margin-top: 20px;
+}
+
+
+
+/* join comunity */
+.comunity {
+  text-align: center;
+}
+.comunity  img {
+  max-width: 20%;
+}
+.comunity .contentBox {
+  padding: 0px 0;
+}
+
+/* scedule */
+.schedule {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #E8E8E8;
+}
+.schedule h4 {
+  font-weight: bold;
+}
+.schedule .scheduleBox {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 20px 0; 
+}
+.schedule .imgBox {
+background-color: #E8E8E8;
+border-radius: 100px;
+height: 70px;
+width: 70px;
+display: flex;
+justify-content: center;
+margin: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.schedule img {
+  max-width: 65%;
+}
+.schedule p.text-red {
+  color: #F35350;
+}
+/* footer */
+footer {
+  padding: 40px 0;
+}
+
+
+
+/* Desktop */
+@media (min-width: 992px) {
+  
+  .home .display-4 {
+    font-size: 3.5rem;
+  }
+  .home h4 {
+  margin-top: 0;
+  }
+
+  /* comunity */
+  .comunity {
+    text-align: left
+  }
+  .comunity img {
+  max-width: 100%;
+  }
+  
+  .comunity h4 {
+    font-weight: bold;
+  }
+  
+  /* schdl */
+  .schedule {
+    text-align: left;
+  }
+  .schedule .scheduleBox {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .schedule .imgBox {
+  background-color: #E8E8E8;
+  border-radius: 100px;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  }
+  .schedule .schedule-content {
+    position: absolute;
+    top: 0;
+  }
+}
